@@ -23,7 +23,6 @@ class AlibabaClient extends ContainerBase
      * @var array
      */
     protected $provider = [
-        StoreProvider::class,
         ProductProvider::class,
         // 订单服务
         OrderProvider::class,
