@@ -3,6 +3,7 @@
 namespace Wufly\Alibaba;
 
 use Wufly\Alibaba\Core\ContainerBase;
+use Wufly\Alibaba\provider\OrderProvider;
 use Wufly\Alibaba\Provider\StoreProvider;
 use Wufly\Alibaba\Provider\ProductProvider;
 
@@ -24,6 +25,8 @@ class AlibabaClient extends ContainerBase
     protected $provider = [
         StoreProvider::class,
         ProductProvider::class,
+        // 订单服务
+        OrderProvider::class,
         //...其他服务提供者
     ];
 }
