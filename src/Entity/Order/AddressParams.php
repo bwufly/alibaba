@@ -9,13 +9,13 @@
 // | Author: wufly <wfxykzd@163.com>
 // +----------------------------------------------------------------------
 
-namespace Wufly\Alibaba\entity\order;
+namespace Wufly\Alibaba\Entity\Order;
 
 use Wufly\Alibaba\Entity\BaseEntityParams;
 
 /** 订单收货地址
  * Class AddressParams
- * @package Wufly\Alibaba\entity\order
+ * @package Wufly\Alibaba\Entity\Order
  */
 class AddressParams extends BaseEntityParams
 {

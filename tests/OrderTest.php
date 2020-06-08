@@ -5,11 +5,11 @@ namespace Test\Wufly\Alibaba;
 use PHPUnit\Framework\TestCase;
 use Wufly\Alibaba\AlibabaClient;
 use Symfony\Component\Dotenv\Dotenv;
-use Wufly\Alibaba\entity\order\AddressParams;
-use Wufly\Alibaba\entity\order\CargoParams;
+use Wufly\Alibaba\Entity\Order\AddressParams;
+use Wufly\Alibaba\Entity\Order\CargoParams;
 use Wufly\Alibaba\Entity\Order\OrderCreateParams;
-use Wufly\Alibaba\entity\order\OrderPayUrlParams;
-use Wufly\Alibaba\entity\order\OrderTraceParams;
+use Wufly\Alibaba\Entity\Order\OrderPayUrlParams;
+use Wufly\Alibaba\Entity\Order\OrderTraceParams;
 
 class OrderTest extends TestCase
 {
@@ -70,57 +70,6 @@ class OrderTest extends TestCase
                     'quantity' => '1',
                 ]),
 
-                new CargoParams([
-                    'offerId'  => '576586053286',
-                    'specId'   => '86487a4d0cc06ffa87d22f374157e954',
-                    'quantity' => '1',
-                ]),
-                new CargoParams([
-                    'offerId'  => '599841185206',
-                    'specId'   => 'ce8ab4ec6afda20cf5fcaead6bbb9998',
-                    'quantity' => '1',
-                ]),
-                new CargoParams([
-                    'offerId'  => '599842281458',
-                    'specId'   => '04445998b4bb28db4f702a883a5e7956',
-                    'quantity' => '1',
-                ]),
-                new CargoParams([
-                    'offerId'  => '577408214909',
-                    'specId'   => '18fc1aa5f6b21b1d4181acd75a897191',
-                    'quantity' => '1',
-                ]),
-                new CargoParams([
-                    'offerId'  => '601454816947',
-                    'specId'   => '4ac5d09a042a7abfb47e8c719130173d',
-                    'quantity' => '1',
-                ]),
-                new CargoParams([
-                    'offerId'  => '539379199056',
-                    'specId'   => 'e6ec1f394b988fe89ead7e5cf34e4392',
-                    'quantity' => '1',
-                ]),
-
-                new CargoParams([
-                    'offerId'  => '574596651348',
-                    'specId'   => '3ac7db10702ec56cd5b7bff644a42d79',
-                    'quantity' => '1',
-                ]),
-                new CargoParams([
-                    'offerId'  => '574596651348',
-                    'specId'   => '317fc2ee7c2952598c01d49f39a3e48f',
-                    'quantity' => '1',
-                ]),
-                new CargoParams([
-                    'offerId'  => '578700408024',
-                    'specId'   => 'c40d2c8e95aa31e2f1daa39598db5042',
-                    'quantity' => '2',
-                ]),
-                new CargoParams([
-                    'offerId'  => '574991510545',
-                    'specId'   => '383bdcde41f228f2dba9b0723d8f15f7',
-                    'quantity' => '1',
-                ]),
             ]
         ]);
         $res = $obj->order->create($orderCreateParams)->post();

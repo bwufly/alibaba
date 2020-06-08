@@ -3,7 +3,7 @@
 namespace Wufly\Alibaba;
 
 use Wufly\Alibaba\Core\ContainerBase;
-use Wufly\Alibaba\provider\OrderProvider;
+use Wufly\Alibaba\Provider\OrderProvider;
 use Wufly\Alibaba\Provider\StoreProvider;
 use Wufly\Alibaba\Provider\ProductProvider;
 

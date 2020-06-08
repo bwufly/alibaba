@@ -9,7 +9,7 @@
 // | Author: wufly <wfxykzd@163.com>
 // +----------------------------------------------------------------------
 
-namespace Wufly\Alibaba\provider;
+namespace Wufly\Alibaba\Provider;
 
 use Wufly\Alibaba\Core\Container;
 use Wufly\Alibaba\functions\order\Order;

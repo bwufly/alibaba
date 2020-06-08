@@ -9,16 +9,16 @@
 // | Author: wufly <wfxykzd@163.com>
 // +----------------------------------------------------------------------
 
-namespace Wufly\Alibaba\entity\order;
+namespace Wufly\Alibaba\Entity\Order;
 
 use Wufly\Alibaba\Entity\BaseEntityParams;
 
-/** 获取订单物流信息参数
- * Class OrderTraceParams
- * @package Wufly\Alibaba\entity\order
+/** 回去订单支付链接参数
+ * Class OrderPayUrlParams
+ * @package Wufly\Alibaba\Entity\Order
  */
-class OrderTraceParams extends BaseEntityParams
+class OrderPayUrlParams extends BaseEntityParams
 {
-    public $orderId;
-    public $webSite = '1688';
+    public $orderIdList = []; // 订单号列表
+
 }

@@ -9,7 +9,7 @@
 // | Author: wufly <wfxykzd@163.com>
 // +----------------------------------------------------------------------
 
-namespace Wufly\Alibaba\entity;
+namespace Wufly\Alibaba\Entity;
 
 abstract class BaseModel
 {

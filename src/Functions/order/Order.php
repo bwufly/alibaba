@@ -9,12 +9,12 @@
 // | Author: wufly <wfxykzd@163.com>
 // +----------------------------------------------------------------------
 
-namespace Wufly\Alibaba\functions\order;
+namespace Wufly\Alibaba\Functions\Order;
 
 use Wufly\Alibaba\Core\BaseClient;
 use Wufly\Alibaba\Entity\Order\OrderCreateParams;
-use Wufly\Alibaba\entity\order\OrderPayUrlParams;
-use Wufly\Alibaba\entity\order\OrderTraceParams;
+use Wufly\Alibaba\Entity\Order\OrderPayUrlParams;
+use Wufly\Alibaba\Entity\Order\OrderTraceParams;
 
 class Order extends BaseClient
 {
