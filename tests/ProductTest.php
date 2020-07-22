@@ -36,13 +36,24 @@ class ProductTest extends TestCase
         $this->assertStringContainsString('0', $res['code']);
     }
 
-    public function testProductInfo()
+    public function testSampleProductInfo()
     {
         $obj = new AlibabaClient();
         $obj->setAppkey(getenv('AppKey'));
         $obj->setAppsecret(getenv('AppSecret'));
         $obj->setAccessToken('8897ad06-728e-48a0-8290-4964a90bca60');
         $res = $obj->product->simpleProductInfo(new ProductInfoParams(['productID' => 597379592613]))->post();
+        print_r(json_encode($res));
+        die;
+    }
+
+    public function testProductInfo()
+    {
+        $obj = new AlibabaClient();
+        $obj->setAppkey(getenv('AppKey'));
+        $obj->setAppsecret(getenv('AppSecret'));
+        $obj->setAccessToken('e9ff012d-780f-490e-b42e-450efc325c48');
+        $res = $obj->product->productInfo(new ProductInfoParams(['offerId' => 597379592613]))->post();
         print_r(json_encode($res));
         die;
     }
