@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":178:{a:2:{s:7:"defects";a:1:{s:53:"Test\Wufly\Alibaba\ProductTest::testSampleProductInfo";i:4;}s:5:"times";a:1:{s:53:"Test\Wufly\Alibaba\ProductTest::testSampleProductInfo";d:0.027;}}}

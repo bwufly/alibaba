@@ -12,7 +12,7 @@
 namespace Wufly\Alibaba\Provider;
 
 use Wufly\Alibaba\Core\Container;
-use Wufly\Alibaba\functions\order\Order;
+use Wufly\Alibaba\Functions\Order\Order;
 use Wufly\Alibaba\Interfaces\Provider;
 
 class OrderProvider implements Provider

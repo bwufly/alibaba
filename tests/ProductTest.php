@@ -7,6 +7,7 @@ use Wufly\Alibaba\AlibabaClient;
 use Wufly\Alibaba\Entity\ProductFollowParams;
 use Wufly\Alibaba\Entity\ProductInfoParams;
 use Symfony\Component\Dotenv\Dotenv;
+use Wufly\Alibaba\Entity\SimpleProductInfoParams;
 
 class ProductTest extends TestCase
 {
@@ -23,7 +24,7 @@ class ProductTest extends TestCase
     public function testFollow()
     {
         $obj = new AlibabaClient([
-            'productId' => '532137286888',
+            'productId' => '525171140408',
         ]);
         $obj->setAppkey(getenv('AppKey'));
         $obj->setAppsecret(getenv('AppSecret'));
@@ -42,7 +43,7 @@ class ProductTest extends TestCase
         $obj->setAppkey(getenv('AppKey'));
         $obj->setAppsecret(getenv('AppSecret'));
         $obj->setAccessToken('8897ad06-728e-48a0-8290-4964a90bca60');
-        $res = $obj->product->simpleProductInfo(new ProductInfoParams(['productID' => 597379592613]))->post();
+        $res = $obj->product->simpleProductInfo(new SimpleProductInfoParams(['productID' => 525171140408]))->post();
         print_r(json_encode($res));
         die;
     }
